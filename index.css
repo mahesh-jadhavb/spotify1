@@ -1,0 +1,335 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background: black;
+    color: white;
+    /* basically overflow used to sets the desired behavior when content does not fit in the element's padding box (overflows) in the horizontal and/or vertical direction */
+    overflow: hidden;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    background: #000;
+    margin-right: 0.5rem;
+    width: 340px;
+    border-radius: 1rem;
+}
+
+.main-content {
+    background: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+
+}
+
+.music-player {
+    background: yellow;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 72px;
+    border-radius: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav {
+    background: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.nav-option:hover {
+    opacity: 1;
+
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+    opacity: 0.5;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+
+}
+
+.library {
+    background: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.25rem;
+
+
+    display: flex;
+}
+
+.icons i {
+
+    opacity: 0.5;
+    margin-right: 1rem;
+
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+.box {
+    height: 8em;
+    background: #232323;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1.25rem;
+}
+
+.box-p1 {
+    font-size: 1rem;
+    background: #232323;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+.box-p2 {
+    font-size: 0.75rem;
+
+    background: #232323;
+
+}
+
+.badge {
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.sticky-nav-icons {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 1em 0;
+    z-index: 1;
+}
+
+.sticky-nav-icons img {
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sticky-nav-options button {
+    margin-right: 1rem;
+}
+
+@media (max-width:1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+.card {
+    background: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+
+
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-info {
+    font-size: 0.75rem;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.3;
+}
+
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.player {
+    width: 50%;
+
+}
+
+
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon {
+    height: 1rem;
+    margin-right: 1.5rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+.progress-bar {
+    appearance: none;
+    width: 70%;
+    background: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+
+}
+
+.album {
+    width: 25%;
+display: flex;
+}
+.imagetag{
+    height: 2rem;
+    padding-top: 0.67rem;
+}
+.par{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding: 0.6rem;
+    font-size: 0.7rem;
+
+}
+
+.alico{
+height: 1.6rem;
+display: flex;
+margin-right:0.2rem ;
+
+position: relative;
+top: 0.9rem;
+opacity: 0.5;
+
+
+}
+.alico:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.tv{
+    margin-left: 0.2rem;
+    opacity: 0.9;
+}
+
+.controls {
+    width: 25%;
+    display: flex;
+    padding-left: 0.8rem;
+height: 3rem;
+
+}
+.contico{
+    display: flex;
+    position: relative;
+    top: 0.9rem;
+
+}
+.iocontrol{
+    height: 1.9rem;
+    padding-right: 0.6rem;
+}
+.iocontrol:hover{
+    opacity: 1;
+}
